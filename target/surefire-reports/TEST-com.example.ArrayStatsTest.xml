@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.AppTest" time="0.03" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.ArrayStatsTest" time="0.084" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -55,5 +55,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="greeterProducesExpectedMessage" classname="com.example.AppTest" time="0.021"/>
+  <testcase name="meanIsCorrect" classname="com.example.ArrayStatsTest" time="0.027"/>
+  <testcase name="maxFindsLargest" classname="com.example.ArrayStatsTest" time="0.001"/>
+  <testcase name="singleElementMax" classname="com.example.ArrayStatsTest" time="0.001"/>
+  <testcase name="negativeValuesMin" classname="com.example.ArrayStatsTest" time="0.001"/>
+  <testcase name="minFindsSmallest" classname="com.example.ArrayStatsTest" time="0.001"/>
+  <testcase name="meanWithNegativeValues" classname="com.example.ArrayStatsTest" time="0.001"/>
 </testsuite>
