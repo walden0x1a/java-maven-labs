@@ -2,6 +2,7 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ArrayStatsTest {
 
@@ -35,5 +36,20 @@ public class ArrayStatsTest {
     @Test
     void meanWithNegativeValues() {
         assertEquals(-2.0, s.mean(new int[]{-4, -2, 0, -2}));
+    }
+
+    @Test
+    void emptyArrayThrowsForMax() {
+        assertThrows(IllegalArgumentException.class, () -> s.max(new int[]{}));
+    }
+
+    @Test
+    void emptyArrayThrowsForMin() {
+        assertThrows(IllegalArgumentException.class, () -> s.min(new int[]{}));
+    }
+
+    @Test
+    void emptyArrayThrowsForMean() {
+        assertThrows(IllegalArgumentException.class, () -> s.mean(new int[]{}));
     }
 }
