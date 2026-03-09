@@ -2,8 +2,19 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-        Greeter greeter = new Greeter("Hello");
-        String who = (args.length > 0) ? args[0] : "world";
-        System.out.println(greeter.greet(who));
+        if (args.length < 2) {
+            System.out.println("Usage: App <num1> <num2>");
+            return;
+        }
+
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+
+        Calculator calc = new Calculator();
+
+        System.out.println("Sum:     " + calc.sum(a, b));
+        System.out.println("Diff:    " + calc.diff(a, b));
+        System.out.println("Product: " + calc.product(a, b));
+        System.out.println("Average: " + calc.average(a, b));
     }
 }
